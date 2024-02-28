@@ -1,0 +1,11 @@
+rootProject.name = 'puzzled'
+include 'backend'
+include 'frontend'
+include 'commons'
+include 'backend:puzzlemanagementservice'
+findProject(':backend:puzzlemanagementservice')?.name = 'puzzlemanagementservice'
+include 'backend:puzzleapigateway'
+findProject(':backend:puzzleapigateway')?.name = 'puzzleapigateway'
+include 'backend:gamelogicservice'
+findProject(':backend:gamelogicservice')?.name = 'gamelogicservice'
+
