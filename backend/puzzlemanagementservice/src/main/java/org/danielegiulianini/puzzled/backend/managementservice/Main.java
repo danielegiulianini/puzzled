@@ -1,8 +1,13 @@
 package org.danielegiulianini.puzzled.backend.managementservice;
 
+import io.vertx.core.Vertx;
+import org.danielegiulianini.backend.constants.ServicesInfo;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws InterruptedException {
+        Vertx.vertx().deployVerticle(new PuzzlesManagementService(ServicesInfo.PUZZLES_MANAGEMENT_SERVICE_PORT));
+
+        Thread.sleep(1000);
     }
 
 }
