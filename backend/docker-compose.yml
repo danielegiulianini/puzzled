@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  puzzlemanagementservice:
+    build:
+      context: ./PuzzleManagementService
+      dockerfile: Dockerfile
+    image: puzzlemanagementservice
+    ports:
+      - 8087:8087
+  gamelogicservice:
+    build:
+      context: ./GameLogicService
+      dockerfile: Dockerfile
+    image: gamelogicservice
+    ports:
+      - 8086:8086
+  puzzleapigateway:
+    build:
+      context: ./PuzzleApiGateway
+      dockerfile: Dockerfile
+    image: puzzleapigateway
+    ports:
+      - 8085:8085
+
