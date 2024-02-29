@@ -1,17 +1,11 @@
 package org.danielegiulianini.puzzled.frontend.domain;
 
-import pcd.ass03.puzzle.mysol.commons.Position;
-import pcd.ass03.puzzle.mysol.services.domain.Puzzle;
-import pcd.ass03.puzzle.mysol.services.domain.PuzzleTile;
-import pcd.ass03.puzzle.mysol.services.domain.events.UserExited;
-import pcd.ass03.puzzle.mysol.services.domain.events.UserJoined;
-import pcd.ass03.puzzle.mysol.services.domain.events.CursorMoved;
-import pcd.ass03.puzzle.mysol.services.domain.events.GameInfo;
-import pcd.ass03.puzzle.mysol.services.domain.events.PuzzleCompleted;
-import pcd.ass03.puzzle.mysol.services.domain.events.PuzzleEvent;
-import pcd.ass03.puzzle.mysol.services.domain.events.TilesSwap;
+import org.danielegiulianini.puzzled.commons.Position;
+import org.danielegiulianini.puzzled.commons.Puzzle;
+import org.danielegiulianini.puzzled.commons.PuzzleTile;
+import org.danielegiulianini.puzzled.commons.domain.events.*;
 
-import static pcd.ass03.puzzle.mysol.commons.LoggingUtils.log;
+import static org.danielegiulianini.puzzled.commons.LoggingUtils.log;
 
 
 /*

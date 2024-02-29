@@ -1,7 +1,7 @@
 package org.danielegiulianini.puzzled.backend.managementservice;
 
 import io.vertx.core.Vertx;
-import org.danielegiulianini.backend.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

@@ -5,7 +5,9 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import org.danielegiulianini.backend.domain.Puzzle;
+import org.danielegiulianini.puzzled.commons.Puzzle;
+
+import static org.danielegiulianini.puzzled.commons.LoggingUtils.log;
 
 public class PuzzlesStorage {
 	private Set<Puzzle> puzzles;
@@ -24,6 +26,7 @@ public class PuzzlesStorage {
 
 	private int puzzlesAutoIncrement = 0;
 	public int insertPuzzle(Puzzle p) {
+		log("inserting puzzle "+ p);
 		p.setId(""+puzzlesAutoIncrement);
 		this.puzzles.add(p);
 		return puzzlesAutoIncrement++;

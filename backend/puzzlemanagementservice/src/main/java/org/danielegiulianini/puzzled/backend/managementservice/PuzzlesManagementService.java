@@ -11,12 +11,12 @@ import io.vertx.core.json.Json;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.CorsHandler;
-import org.danielegiulianini.backend.domain.Puzzle;
-import org.danielegiulianini.backend.domain.PuzzleFactory;
+import org.danielegiulianini.puzzled.commons.Puzzle;
+import org.danielegiulianini.puzzled.commons.domain.PuzzleFactory;
 import org.danielegiulianini.puzzled.commons.JsonUtils;
 import org.danielegiulianini.puzzled.commons.ServiceVerticle;
 
-import org.danielegiulianini.backend.constants.Constants;
+import org.danielegiulianini.puzzled.commons.constants.Constants;
 
 /* 
  * This is the REST API service that stores unsolved puzzles and provides CRUD 
@@ -42,13 +42,17 @@ public class PuzzlesManagementService extends ServiceVerticle {
 
 	//simple script that creates a puzzle
 	private void loadData(Promise<Object> f) {
-		log("inserting some test data");
+		log("inserting some data...");
 
 		final int n = 3;
 		final int m = 5;
 
 		PuzzleFactory factory = new PuzzleFactory();
+		log("puzzle factory created");
+
 		Puzzle puzzle = factory.createPuzzle(n, m);
+		log("created puzzle is "+ puzzle);
+
 		ps.insertPuzzle(puzzle);
 		f.complete();
 	}
@@ -103,6 +107,7 @@ public class PuzzlesManagementService extends ServiceVerticle {
 	}
 
 	private void handleGetAllPuzzles(final RoutingContext routingContext) {
+		log("received request for all puzzles");
 		handleGetJson(routingContext, ps.getAllPuzzles());
 	}
 

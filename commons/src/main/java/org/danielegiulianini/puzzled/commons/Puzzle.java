@@ -1,10 +1,12 @@
-package org.danielegiulianini.backend.domain;
+package org.danielegiulianini.puzzled.commons;
 
 import java.util.Optional;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.danielegiulianini.puzzled.commons.PuzzleTile;
+import org.danielegiulianini.puzzled.commons.domain.AbstractJsonable;
+import org.danielegiulianini.puzzled.commons.domain.Identifiable;
 
 import static org.danielegiulianini.puzzled.commons.LoggingUtils.log;
 

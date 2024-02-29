@@ -1,11 +1,11 @@
 package org.danielegiulianini.puzzled.frontend.domain;
 
 
+import org.danielegiulianini.puzzled.commons.JsonMessageEncoderDecoder;
 import org.danielegiulianini.puzzled.commons.WebSocketClient;
 import org.danielegiulianini.puzzled.commons.WebSocketListenerAdapter;
-import pcd.ass03.puzzle.mysol.services.domain.events.PuzzleEvent;
-import pcd.ass03.puzzle.mysol.services.JsonMessageEncoderDecoder;
-import pcd.ass03.puzzle.mysol.services.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.domain.events.PuzzleEvent;
 
 /*
  * This class contains the networking logic (websockets) for retrieving the 

@@ -7,8 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 
-import pcd.ass03.puzzle.mysol.commons.Position;
-import pcd.ass03.puzzle.mysol.services.domain.Puzzle;
+import org.danielegiulianini.puzzled.commons.Position;
+import org.danielegiulianini.puzzled.commons.Puzzle;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

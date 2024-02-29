@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/backend/puzzlemanagementservice" />
             <option value="$PROJECT_DIR$/commons" />
             <option value="$PROJECT_DIR$/frontend" />
+            <option value="$PROJECT_DIR$/system-test" />
           </set>
         </option>
       </GradleProjectSettings>

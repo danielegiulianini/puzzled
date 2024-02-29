@@ -7,6 +7,7 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +15,8 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import pcd.ass03.puzzle.mysol.commons.Position;
+import org.danielegiulianini.puzzled.commons.Position;
+import org.danielegiulianini.puzzled.commons.domain.PuzzleFactory;
 
 /*
  * Class responsible for displaying other-users pointers during puzzle solving.
@@ -24,7 +26,9 @@ import pcd.ass03.puzzle.mysol.commons.Position;
 public class PointersDrawer extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	String imagePath = "src/main/java/pcd/ass03/puzzle/mysol/client/domain/pointer_small.png";;//"src/main/java/pcd/ass03/puzzle/concentrated/bletchley-park-mansion.jpg";
+	String imagePath = "pointer_small.png";;//"src/main/java/pcd/ass03/puzzle/concentrated/bletchley-park-mansion.jpg";
+	private InputStream imageAsInputStream = PointersDrawer.class.getResourceAsStream("/pointer_small.png");
+
 	private Map<String, Position> pointersPositionsByUserId;	//Map<String, Position> pointersImagesByUserId;
 
 	private static Image pointerImage;
@@ -75,7 +79,7 @@ public class PointersDrawer extends JPanel {
 	private Image loadImage() {
 		BufferedImage image = null;
 		try {
-			image = ImageIO.read(new File(imagePath));
+			image = ImageIO.read(imageAsInputStream);//ImageIO.read(new File(imagePath));
 			System.out.println("image loaded");
 		} catch (IOException ex) {
 			ex.printStackTrace();		

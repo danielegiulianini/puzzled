@@ -1,9 +1,9 @@
-package org.danielegiulianini.backend.domain.events;
+package org.danielegiulianini.puzzled.commons.domain.events;
 
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import org.danielegiulianini.backend.domain.AbstractJsonable;
+import org.danielegiulianini.puzzled.commons.domain.AbstractJsonable;
 
 
 /*

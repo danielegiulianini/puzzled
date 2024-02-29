@@ -1,7 +1,8 @@
 package org.danielegiulianini.puzzled.frontend.domain;
 
-import pcd.ass03.puzzle.mysol.commons.Position;
-import pcd.ass03.puzzle.mysol.services.domain.PuzzleTile;
+
+import org.danielegiulianini.puzzled.commons.Position;
+import org.danielegiulianini.puzzled.commons.PuzzleTile;
 
 public interface MyGameEventsObserver {
 	void onMyTileSelection(final PuzzleTile tile);

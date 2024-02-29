@@ -5,21 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63f50dbb-cf83-4864-b803-a3421f45e8f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/danielegiulianini/backend/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/org/danielegiulianini/backend/constants/ServicesInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/gamelogicservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gamelogicservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/gamelogicservice/src/main/java/org/danielegiulianini/puzzled/backend/gamelogicservice/GameLogicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gamelogicservice/src/main/java/org/danielegiulianini/puzzled/backend/gamelogicservice/GameLogicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/gamelogicservice/src/main/java/org/danielegiulianini/puzzled/backend/gamelogicservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gamelogicservice/src/main/java/org/danielegiulianini/puzzled/backend/gamelogicservice/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/puzzleapigateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzleapigateway/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/puzzleapigateway/src/main/java/org/danielegiulianini/puzzled/backend/gateway/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzleapigateway/src/main/java/org/danielegiulianini/puzzled/backend/gateway/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/puzzleapigateway/src/main/java/org/danielegiulianini/puzzled/backend/gateway/PuzzleApiGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzleapigateway/src/main/java/org/danielegiulianini/puzzled/backend/gateway/PuzzleApiGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/puzzlemanagementservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzlemanagementservice/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/org/danielegiulianini/puzzled/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/PuzzlesManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/PuzzlesManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/PuzzlesStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/PuzzlesStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commons/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/JsonMessageEncoderDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/JsonMessageEncoderDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/Puzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/Puzzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/constants/ServicesInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/constants/ServicesInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/AbstractJsonable.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/AbstractJsonable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/Identifiable.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/Identifiable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/Jsonable.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/Jsonable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/PuzzleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/PuzzleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/PuzzleRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/PuzzleRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/CursorMoved.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/CursorMoved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/GameInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/GameInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/PuzzleCompleted.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/PuzzleCompleted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/PuzzleEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/PuzzleEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/TilesSwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/TilesSwap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/UserExited.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/UserExited.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/UserJoined.java" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/java/org/danielegiulianini/puzzled/commons/domain/events/UserJoined.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/ClientGameLogicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/ClientGameLogicManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/MyGameEventsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/MyGameEventsObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/OtherUsersEventsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/OtherUsersEventsObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PointersDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PointersDrawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PuzzleBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PuzzleBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PuzzleWebSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/java/org/danielegiulianini/puzzled/frontend/domain/PuzzleWebSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system-test/src/test/java/org/danielegiulianini/puzzled/systemtest/TestGameLogicServiceSingleConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/system-test/src/test/java/org/danielegiulianini/puzzled/systemtest/TestGameLogicServiceSingleConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;8&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled/backend/puzzleapigateway/src/main/java/org/danielegiulianini&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "8",
+    "last_directory_selection": "C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled/backend/puzzleapigateway/src/main/java/org/danielegiulianini",
+    "last_opened_file_path": "C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled/frontend/src/main/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\frontend\src\main\resources" />
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\commons\src\test\resources" />
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend" />
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\system-test\src\test\java\org\danielegiulianini\puzzled\systemtest" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\frontend\src\main\resources" />
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\system-test\src\test\java\org\danielegiulianini\puzzled\systemtest" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\frontend\src\main\java\org\danielegiulianini\puzzled\frontend\domain" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\puzzleapigateway\src\main\java\org\danielegiulianini\puzzled\backend\gateway" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\puzzlemanagementservice\src\main\java\org\danielegiulianini\puzzled\backend\managementservice" />
-      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\gamelogicservice\src\main\java\org\danielegiulianini\puzzled\backend\gamelogicservice" />
-      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\src\main\java\org\danielegiulianini\puzzled\domain\events" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,5 +125,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/puzzlemanagementservice/src/main/java/org/danielegiulianini/puzzled/backend/managementservice/PuzzlesManagementService.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

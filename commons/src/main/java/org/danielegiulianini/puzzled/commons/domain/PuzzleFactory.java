@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.domain;
+package org.danielegiulianini.puzzled.commons.domain;
 
 import org.danielegiulianini.puzzled.commons.Puzzle;
 import org.danielegiulianini.puzzled.commons.PuzzleTile;
@@ -30,15 +30,25 @@ public class PuzzleFactory {
 	private Set<PuzzleTile> createTiles(int rows, int columns) {
 		final BufferedImage image;
 		Set<PuzzleTile> tiles = new HashSet<>();
+		log("inside crateTiles");
 		try {
+			log("before reading image");
+
 			image = ImageIO.read(imageAsInputStream);
+			log("after reading image");
+
 		} catch (IOException ex) {
 			log("problems with image loading...");
+			return null;
+		} catch (Exception es ){
+			log("other problems with image loading...");
+			System.out.println(es);
 			return null;
 		}
 
 		final int imageWidth = image.getWidth(null);
 		final int imageHeight = image.getHeight(null);
+		log("after reading image");
 
 		int position = 0;
 

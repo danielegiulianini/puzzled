@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.constants;
+package org.danielegiulianini.puzzled.commons.constants;
 
 public class Constants {
 

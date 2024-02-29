@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.domain;
+package org.danielegiulianini.puzzled.commons.domain;
 
 import io.vertx.core.json.Json;
 

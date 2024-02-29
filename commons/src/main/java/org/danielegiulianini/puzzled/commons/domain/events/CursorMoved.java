@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.domain.events;
+package org.danielegiulianini.puzzled.commons.domain.events;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

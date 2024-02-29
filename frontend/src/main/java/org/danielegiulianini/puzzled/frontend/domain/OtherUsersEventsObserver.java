@@ -1,6 +1,7 @@
 package org.danielegiulianini.puzzled.frontend.domain;
 
-import pcd.ass03.puzzle.mysol.commons.Position;
+
+import org.danielegiulianini.puzzled.commons.Position;
 
 public interface OtherUsersEventsObserver {
 	void onPuzzleCompleted();

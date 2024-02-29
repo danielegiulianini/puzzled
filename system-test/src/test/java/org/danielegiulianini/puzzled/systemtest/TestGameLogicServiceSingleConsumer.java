@@ -1,17 +1,17 @@
-package pcd.ass03.puzzle.mysol.test;
+package org.danielegiulianini.puzzled.systemtest;
 
 import io.vertx.core.Vertx;
 import io.vertx.ext.unit.Async;
 import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
-import pcd.ass03.puzzle.mysol.client.domain.WebSocketClient;
-import pcd.ass03.puzzle.mysol.services.constants.ServicesInfo;
-import pcd.ass03.puzzle.mysol.services.domain.events.GameInfo;
-import pcd.ass03.puzzle.mysol.services.gameLogicService.GameLogicService;
-import pcd.ass03.puzzle.mysol.services.puzzlesManagementService.PuzzlesManagementService;
-import pcd.ass03.puzzle.mysol.test.TestGameLogicServiceManyConsumers.PuzzleEventsListenerAdapter;
-import static pcd.ass03.puzzle.mysol.test.TestGameLogicServiceManyConsumers.WAIT_FOR_SERVER_UP;
-import static pcd.ass03.puzzle.mysol.test.TestGameLogicServiceManyConsumers.createWebSocketClientToPuzzleService;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.domain.events.GameInfo;
+import org.danielegiulianini.puzzled.backend.gamelogicservice.GameLogicService;
+import org.danielegiulianini.puzzled.backend.managementservice.PuzzlesManagementService;
+import org.danielegiulianini.puzzled.commons.WebSocketClient;
+
+import static org.danielegiulianini.puzzled.systemtest.TestGameLogicServiceManyConsumers.WAIT_FOR_SERVER_UP;
+import static org.danielegiulianini.puzzled.systemtest.TestGameLogicServiceManyConsumers.createWebSocketClientToPuzzleService;
 
 import org.junit.After;
 import org.junit.Before;
@@ -43,7 +43,7 @@ public class TestGameLogicServiceSingleConsumer {
 		vertx
 		.deployVerticle(new PuzzlesManagementService(ServicesInfo.PUZZLES_MANAGEMENT_SERVICE_PORT),
 				id -> vertx
-				.deployVerticle(new GameLogicService(ServicesInfo.GAME_LOGIC_SERVICE_PORT), 
+				.deployVerticle(new GameLogicService(ServicesInfo.GAME_LOGIC_SERVICE_PORT),
 						id2 -> vertx.setTimer(WAIT_FOR_SERVER_UP, l-> async.complete())));
 	}
 
@@ -55,7 +55,7 @@ public class TestGameLogicServiceSingleConsumer {
 	@Test
 	public void testServiceSendsGameInfoAfterWebsocketConnection(TestContext context) {
 		Async async = context.async();
-		webSocketClient.connect(new PuzzleEventsListenerAdapter(decoded -> {
+		webSocketClient.connect(new TestGameLogicServiceManyConsumers.PuzzleEventsListenerAdapter(decoded -> {
 			if (decoded instanceof GameInfo) async.complete();
 		}));
 	}
@@ -63,7 +63,7 @@ public class TestGameLogicServiceSingleConsumer {
 	@Test
 	public void testRoomSentByServiceIsNotNull(TestContext context) {
 		Async async = context.async();
-		webSocketClient.connect(new PuzzleEventsListenerAdapter(decoded -> {
+		webSocketClient.connect(new TestGameLogicServiceManyConsumers.PuzzleEventsListenerAdapter(decoded -> {
 			if (decoded instanceof GameInfo && ((GameInfo) decoded).getRoomAssignedToClient() != null) async.complete();
 		}));
 	}
@@ -71,7 +71,7 @@ public class TestGameLogicServiceSingleConsumer {
 	@Test
 	public void testPuzzleSentByServiceIsNotNull(TestContext context) {
 		Async async = context.async();
-		webSocketClient.connect(new PuzzleEventsListenerAdapter(decoded -> {
+		webSocketClient.connect(new TestGameLogicServiceManyConsumers.PuzzleEventsListenerAdapter(decoded -> {
 			if (decoded instanceof GameInfo && ((GameInfo) decoded).getRoomAssignedToClient().getPuzzle() != null) async.complete();
 		}));
 	}

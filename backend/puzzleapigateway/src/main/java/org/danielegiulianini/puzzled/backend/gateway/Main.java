@@ -1,6 +1,6 @@
 package org.danielegiulianini.puzzled.backend.gateway;
 
-import org.danielegiulianini.backend.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
 
 public class Main {
 

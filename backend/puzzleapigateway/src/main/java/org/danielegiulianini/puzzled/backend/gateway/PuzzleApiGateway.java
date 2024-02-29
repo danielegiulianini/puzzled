@@ -6,7 +6,7 @@ import io.vertx.core.AsyncResult;
 import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 
-import org.danielegiulianini.backend.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
 import org.danielegiulianini.puzzled.commons.WebSocketClient;
 
 /*

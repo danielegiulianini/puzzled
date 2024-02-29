@@ -12,15 +12,17 @@ import java.util.stream.Collectors;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.Promise;
+import io.vertx.core.file.FileSystemOptions;
 import io.vertx.core.http.HttpServerOptions;
 import io.vertx.core.http.ServerWebSocket;
 
-import org.danielegiulianini.backend.constants.ServicesInfo;
-import org.danielegiulianini.backend.domain.Puzzle;
-import org.danielegiulianini.backend.domain.PuzzleRoom;
-import org.danielegiulianini.backend.domain.events.*;
+import org.danielegiulianini.puzzled.commons.constants.ServicesInfo;
+import org.danielegiulianini.puzzled.commons.Puzzle;
+import org.danielegiulianini.puzzled.commons.domain.PuzzleRoom;
 import org.danielegiulianini.puzzled.commons.RestFetcherService;
-import org.danielegiulianini.backend.JsonMessageEncoderDecoder;
+import org.danielegiulianini.puzzled.commons.JsonMessageEncoderDecoder;
+import org.danielegiulianini.puzzled.commons.domain.events.*;
+
 /*
  * This is the service that:
  * 1. groups service-consumers into rooms, each of which is assigned a puzzle
@@ -50,8 +52,15 @@ public class GameLogicService extends RestFetcherService {
 		.webSocketHandler(this::webSocketHandler)
 		.listen(localPort);
 
-		fetchPuzzles(puzzles -> 
-		rooms.addAll(puzzles.stream().map(PuzzleRoom::new).collect(Collectors.toList())));
+		fetchPuzzles(
+
+				puzzles -> {
+					rooms.addAll(puzzles.stream().map(PuzzleRoom::new).collect(Collectors.toList()));
+					log("puzzles fetched!, they are"+ puzzles);
+					log("rooms are" + rooms);
+				}
+
+		);
 
 		log("ready at port: " + localPort);
 	}
@@ -69,6 +78,8 @@ public class GameLogicService extends RestFetcherService {
 	}
 
 	private void fetchPuzzles(Handler<List<Puzzle>> fun) {
+		log("fetching puzzles...");
+
 		fetchFromRestService(
 				ServicesInfo.PUZZLES_MANAGEMENT_SERVICE_PORT, 
 				ServicesInfo.PUZZLES_MANAGEMENT_SERVICE_HOST,
@@ -76,6 +87,8 @@ public class GameLogicService extends RestFetcherService {
 				result -> {
 					Optional<List<Puzzle>> puzzles = encoder.decodePuzzles(result.bodyAsString());
 					if (puzzles.isPresent()) {
+						log("puzzle is present in response by service");
+
 						fun.handle(puzzles.get());
 					} else {
 						log("puzzles management service response malformed: "+puzzles);
@@ -88,19 +101,30 @@ public class GameLogicService extends RestFetcherService {
 		Optional<PuzzleRoom> room = rooms.stream().filter(x -> !x.getPuzzle().isComplete()).findFirst();
 		if (room.isPresent()) {
 			promise.complete(room.get());
+			log("a room is present: assigning to user");
 		} else {
+			log("a room is not present: fetching from service");
+
 			fetchPuzzles(puzzles -> {
+
 				if (!puzzles.isEmpty()) {
+					log("a room is returned by service");
+
 					Collections.shuffle(puzzles);
 					Puzzle newPuzzle = puzzles.get(0);	//get the first puzzle available
 					promise.complete(new PuzzleRoom(newPuzzle));
-				} else promise.fail("no rooms.");
+				} else {
+					log("no rooms returned by service");
+
+					promise.fail("no rooms.");
+				}
 			});
 		}
 		return promise.future();
 	}
 
 	private void assignRoomToNewClient(PuzzleRoom room, ServerWebSocket ws) {
+		log("assigning room to client");
 		String newClientId = ws.textHandlerID();	//could have generated ID randomly
 		rooms.add(room);
 		room.addUser(newClientId, ws);

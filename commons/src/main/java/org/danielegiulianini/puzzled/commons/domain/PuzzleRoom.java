@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.domain;
+package org.danielegiulianini.puzzled.commons.domain;
 
 import org.danielegiulianini.puzzled.commons.Puzzle;
 

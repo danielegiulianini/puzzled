@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.danielegiulianini'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'junit:junit:4.13'
+
+    implementation "io.vertx:vertx-core:3.9.1"
+    implementation "io.vertx:vertx-sync:3.9.1"
+    implementation "io.vertx:vertx-web:3.9.1"
+    implementation "io.vertx:vertx-web-client:3.9.1"
+    implementation 'io.vertx:vertx-unit:3.9.1'
+
+
+    implementation(project(':commons'))
+    implementation(project(':frontend'))
+    implementation(project(':backend:gamelogicservice'))
+    implementation(project(':backend:puzzleapigateway'))
+    implementation(project(':backend:puzzlemanagementservice'))
+
+}
+
+application {
+    mainClass = "org.danielegiulianini.puzzled.systemtest.Main"
+}

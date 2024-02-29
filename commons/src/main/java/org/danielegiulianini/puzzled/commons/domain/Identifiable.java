@@ -1,4 +1,4 @@
-package org.danielegiulianini.backend.domain;
+package org.danielegiulianini.puzzled.commons.domain;
 
 public interface Identifiable {
 	void setId(String id);

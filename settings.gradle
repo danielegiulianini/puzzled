@@ -8,4 +8,5 @@ include 'backend:puzzleapigateway'
 findProject(':backend:puzzleapigateway')?.name = 'puzzleapigateway'
 include 'backend:gamelogicservice'
 findProject(':backend:gamelogicservice')?.name = 'gamelogicservice'
+include 'system-test'
 

@@ -1,8 +1,8 @@
-package org.danielegiulianini.backend.domain.events;
+package org.danielegiulianini.puzzled.commons.domain.events;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.danielegiulianini.backend.domain.PuzzleRoom;
+import org.danielegiulianini.puzzled.commons.domain.PuzzleRoom;
 
 
 public class GameInfo extends PuzzleEvent {
