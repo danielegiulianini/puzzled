@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63f50dbb-cf83-4864-b803-a3421f45e8f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/puzzleapigateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/puzzleapigateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +51,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "8",
     "last_directory_selection": "C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled/backend/puzzleapigateway/src/main/java/org/danielegiulianini",
-    "last_opened_file_path": "C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled/backend/puzzlemanagementservice"
+    "last_opened_file_path": "C:/Users/daniele/Documents/dan/lavoro/codeExperiments/puzzled/src/puzzled"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled" />
+      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\frontend" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\puzzlemanagementservice" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\puzzleapigateway" />
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\frontend\src\main\resources" />
-      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\commons\src\test\resources" />
-      <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\daniele\Documents\dan\lavoro\codeExperiments\puzzled\src\puzzled\backend\gamelogicservice" />

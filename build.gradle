@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group 'org.example'
+group 'org.danielegiulianini'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -19,6 +19,3 @@ test {
     useJUnitPlatform()
 }
 
-application {
-    mainClass = "org.example.Main"
-}

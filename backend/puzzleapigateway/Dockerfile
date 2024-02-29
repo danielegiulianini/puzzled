@@ -1,14 +1,8 @@
-# Extend vert.x base image
-FROM vertx/vertx3
+FROM gradle:8-jdk-alpine
 
-ENV VERTICLE_JAR PuzzleApiGateway.jar
-ENV VERTICLE_HOME verticles
+#should copy only the source code this project depends on
+COPY --chown=gradle:gradle ../../ /home/gradle/src
 
-EXPOSE 8080
+WORKDIR /home/gradle/src
 
-# Copy the jar file into a container folder 
-COPY $VERTICLE_JAR $VERTICLE_HOME/
-
-WORKDIR .
-
-ENTRYPOINT ["sh", "-c","java -jar $VERTICLE_HOME/$VERTICLE_JAR"]
+RUN gradle run :puzzleapigateway --no-daemon
