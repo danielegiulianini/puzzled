@@ -52,4 +52,6 @@ High-level puzzled's features:
 
 ## Demo
 This demo shows a simple 2-users scenario where a user completes the puzzle while the other does nothing but watching.
-![](https://github.com/puzzled/puzzle.gif)
+![]([https://github.com/puzzled/puzzle.gif](https://github.com/danielegiulianini/puzzled/blob/master/puzzle.gif)https://github.com/danielegiulianini/puzzled/blob/master/puzzle.gif)
+
+
