@@ -1,7 +1,6 @@
 package org.danielegiulianini.backend.domain;
 
-import org.danielegiulianini.backend.domain.Puzzle;
-import org.danielegiulianini.backend.domain.Jsonable;
+import org.danielegiulianini.puzzled.commons.Puzzle;
 
 import io.vertx.core.json.Json;
 import org.danielegiulianini.puzzled.commons.WebSocketsRoom;

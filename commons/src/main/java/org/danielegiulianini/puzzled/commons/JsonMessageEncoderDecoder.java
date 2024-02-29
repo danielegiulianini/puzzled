@@ -1,8 +1,8 @@
 package org.danielegiulianini.backend;
 
-import org.danielegiulianini.backend.domain.Jsonable;
-import org.danielegiulianini.backend.domain.Puzzle;
-import org.danielegiulianini.backend.domain.events.PuzzleEvent;
+import org.danielegiulianini.puzzled.commons.domain.Jsonable;
+import org.danielegiulianini.puzzled.commons.Puzzle;
+import org.danielegiulianini.puzzled.commons.domain.events.PuzzleEvent;
 import org.danielegiulianini.puzzled.commons.JsonUtils;
 
 import java.util.List;

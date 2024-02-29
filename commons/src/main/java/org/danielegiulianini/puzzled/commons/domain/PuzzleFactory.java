@@ -1,5 +1,6 @@
 package org.danielegiulianini.backend.domain;
 
+import org.danielegiulianini.puzzled.commons.Puzzle;
 import org.danielegiulianini.puzzled.commons.PuzzleTile;
 
 import java.awt.image.BufferedImage;
